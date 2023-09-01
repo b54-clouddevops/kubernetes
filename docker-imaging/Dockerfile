@@ -7,6 +7,8 @@
 # CMD             ["nginx", "-g", "daemon off;"]
 
 FROM            centos:7
-CMD             ["google.com"]
-ENTRYPOINT      [ "echo"]
+# Startup Script, whatever you mention here can be over ridder and this will be an argument to the ENTRYPOINT
+CMD             ["google.com"]    
+# ENTRYPOINT can never be overridden    
+ENTRYPOINT      ["echo"]
 
