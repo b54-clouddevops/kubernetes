@@ -9,5 +9,6 @@
 FROM            centos:7
 RUN             useradd roboshop 
 USER            roboshop   
-CMD             ["sleep","1000"]
+CMD             ["google.com"]
+ENTRYPOINT      [ "ping" , "-c" , "5" ]
 
