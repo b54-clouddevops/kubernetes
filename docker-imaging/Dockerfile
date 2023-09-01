@@ -9,5 +9,5 @@
 FROM            centos:7
 RUN             useradd roboshop 
 USER            roboshop   
-CMD             ["sleep" , "1000"]
+CMD             ["sleep","1000"]
 
